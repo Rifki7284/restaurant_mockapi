@@ -3,6 +3,7 @@ import useRestaurantDetail from "../../hooks/useRestaurantDetail";
 import RestaurantDetail from "../../features/restaurant/components/detail/RestaurantDetail";
 import RestaurantReview from "../../features/restaurant/components/detail/RestaurantReview";
 import NotFound from "../../features/restaurant/components/NoRestaurant";
+import { Spinner } from "../../components/ui/spinner";
 
 export const Route = createFileRoute("/restaurant/$slug")({
   component: Detail,
@@ -14,8 +15,8 @@ function Detail() {
 
   if (loading) {
     return (
-      <div className="pt-32 p-10">
-        <h1>Loading...</h1>
+      <div className="w-full flex justify-center min-h-[50dvh] items-center ">
+        <Spinner className="size-32" />
       </div>
     );
   }
