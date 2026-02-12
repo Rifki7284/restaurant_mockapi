@@ -51,7 +51,6 @@ const Home = () => {
   return (
     <>
       <Navbar />
-
       <div className="pt-32 p-10">
         <div className="mx-auto flex w-full px-4 py-6 gap-4 items-center">
           <h1 className="font-bold text-xl">Filter by :</h1>
@@ -129,7 +128,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  );
+  )
 };
 
 export const Route = createFileRoute("/home")({
