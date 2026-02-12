@@ -20,7 +20,7 @@ git clone https://github.com/Rifki7284/restaurant_mockapi
 cd nama-proyek
 ```
 
-### 2.Buka terminal dan jalankan command berikut
+### 2. Buka terminal dan jalankan command berikut
 
 ```
 npm install
