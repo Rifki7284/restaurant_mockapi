@@ -128,9 +128,9 @@ const Home = () => {
         </div>
       </div>
     </>
-  )
+  );
 };
 
-export const Route = createFileRoute("/home")({
+export const Route = createFileRoute("/")({
   component: Home,
 });
