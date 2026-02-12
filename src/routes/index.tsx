@@ -15,7 +15,6 @@ import { Spinner } from "../components/ui/spinner";
 import { Input } from "../components/ui/input";
 import NotFound from "../features/restaurant/components/NoRestaurant";
 
-// Faker countries
 const countries = Array.from(
   new Set(Array.from({ length: 100 }).map(() => faker.location.country())),
 ).map((country) => ({
@@ -25,11 +24,9 @@ const countries = Array.from(
 
 const Home = () => {
   const [category, setCategory] = useState<string | null>(null);
-  const [statusFilter, setStatusFilter] = useState<string>("all"); // all, active, inactive
-  const [priceFilter, setPriceFilter] = useState<number | "">(""); // min price input
+  const [statusFilter, setStatusFilter] = useState<string>("all");
+  const [priceFilter, setPriceFilter] = useState<number | "">("");
   const { restaurants, loading, loadMore, hasMore } = useRestaurant(category);
-
-  // Client-side filtering
   const filteredRestaurants = useMemo(() => {
     return restaurants.filter((r) => {
       let statusMatch = true;
