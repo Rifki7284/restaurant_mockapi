@@ -16,7 +16,7 @@
 Buka terminal dan jalankan:
 
 ```
-git clone [https://github.com/username/nama-proyek.git](https://github.com/username/nama-proyek.git)
+git clone https://github.com/Rifki7284/restaurant_mockapi
 cd nama-proyek
 ```
 
