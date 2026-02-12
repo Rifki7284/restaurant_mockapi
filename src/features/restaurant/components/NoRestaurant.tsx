@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Home, Utensils } from "lucide-react";
 
 const NotFound = () => {
-  const isHome = location.pathname === "/home";
+  const isHome = location.pathname === "/";
   return (
     <div className="min-h-screen bg-linear-to-br from-gray-50 to-white flex items-center justify-center px-4">
       <div className="max-w-2xl w-full text-center">
@@ -31,7 +31,7 @@ const NotFound = () => {
         {!isHome && (
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
-              to="/home"
+              to="/"
               className="group flex items-center gap-3 bg-linear-to-r from-gray-900 to-black hover:from-black hover:to-gray-900 text-white font-bold text-lg py-4 px-8 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-105 border-4 border-gray-900"
             >
               <Home size={24} strokeWidth={2.5} />
