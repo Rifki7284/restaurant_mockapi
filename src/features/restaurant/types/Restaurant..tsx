@@ -10,5 +10,6 @@ export interface Restaurant {
   price: number;
   slug: string;
   status: boolean;
+  categories: string;
   review: Review[];
 }

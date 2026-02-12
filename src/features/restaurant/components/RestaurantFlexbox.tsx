@@ -6,8 +6,8 @@ interface RestaurantData {
 }
 const RestaurantFlexBox = ({ restaurant }: RestaurantData) => {
   return (
-    <div className={`flex gap-x-4 gap-y-6 flex-wrap`}>
-      {restaurant.map((item) => {
+    <div className={`flex gap-x-4 gap-y-6 flex-wrap `}>
+      {restaurant?.map((item) => {
         return <RestaurantCard restaurant={item} />;
       })}
     </div>
